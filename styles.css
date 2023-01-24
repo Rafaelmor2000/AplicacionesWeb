@@ -1,19 +1,57 @@
-img {float: left;
-     padding: 10px}
-
-body{background-color: #07233d;
-    color: white;
-    padding: 5px;}
-header {background-color: white;
-        color: black;
-        padding-top: 0px;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 10px;}
-h1{padding-top: 5px;
-    color:#07233d}
-a {color: #a4c2f4ff}
-hr { border-top: 5px;
-    border-color: #a4c2f4ff}
-div {padding: 5px}
-address {padding: 5px;}
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .logo > img {
+    width: 50px;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  nav{
+    text-align:left;
+    background-color:gray;
+    margin-left: 10px;
+  }
+  ul{
+    list-style: none;
+  }
+  .hamburger{
+    display: flex;
+    justify-content: flex-end;
+    color:white
+  }
+  .menu {
+    display: none;
+  }
+  .product{
+    border:solid;
+    border-width: 1px;
+    border-color: gray;
+    text-align: center;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  /* Ipads   */
+  @media(min-width: 768px) and (max-width: 1024px){
+    body{
+      background-color: red;
+    }
+  }
+  /* Large Screen   */
+  @media(min-width: 1025px){
+    body{
+      background-color: blue;
+    }
+  }
